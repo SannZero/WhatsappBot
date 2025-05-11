@@ -12,3 +12,7 @@
 	</p>
     <br />
 </div>
+
+
+Installation: 
+``git clone https://github.com/SannZero/WhatsappBot.git``
