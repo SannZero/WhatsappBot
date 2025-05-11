@@ -14,6 +14,7 @@
 </div>
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 ### Installation: 
 ```powershell
@@ -38,48 +39,26 @@ curl -X POST "http://localhost:3000/api/sendMessage?api_key=API_KEY" \
 =======
 ## About
 **A WhatsApp API client that connects through the WhatsApp Web browser app**
+=======
+>>>>>>> f403a3a (Initial commit)
 
-The library works by launching the WhatsApp Web browser application and managing it using Puppeteer to create an instance of WhatsApp Web, thereby mitigating the risk of being blocked. The WhatsApp API client connects through the WhatsApp Web browser app, accessing its internal functions. This grants you access to nearly all the features available on WhatsApp Web, enabling dynamic handling similar to any other Node.js application.
-
-> [!IMPORTANT]
-> **It is not guaranteed you will not be blocked by using this method. WhatsApp does not allow bots or unofficial clients on their platform, so this shouldn't be considered totally safe.**
-
-## Links
-
-* [Website][website]
-* [Guide][guide] ([source][guide-source]) _(work in progress)_
-* [Documentation][documentation] ([source][documentation-source])
-* [WWebJS Discord][discord]
-* [GitHub][gitHub]
-* [npm][npm]
-
-## Installation
-
-The module is now available on npm! `npm i whatsapp-web.js`
-
-> [!NOTE]
-> **Node ``v18+`` is required.**
-
-## QUICK STEPS TO UPGRADE NODE
-
-### Windows
-
-#### Manual
-Just get the latest LTS from the [official node website][nodejs].
-
-#### npm
+### Installation: 
 ```powershell
-sudo npm install -g n
-sudo n stable
+git clone https://github.com/SannZero/WhatsappBot.git
+npm install
 ```
 
-#### Choco
+### Usage:
 ```powershell
-choco install nodejs-lts
+node server
 ```
 
-#### Winget
+### Example Request API:
+URL: ``http://localhost:3000/api/xx?api_key=API_KEY``
+
+### Curl:
 ```powershell
+<<<<<<< HEAD
 winget install OpenJS.NodeJS.LTS
 ```
 
@@ -207,3 +186,9 @@ limitations under the License.
 [contributing]: https://github.com/pedroslopez/whatsapp-web.js/blob/main/CODE_OF_CONDUCT.md
 [whatsapp]: https://whatsapp.com
 >>>>>>> 3707b8b (first commit)
+=======
+curl -X POST "http://localhost:3000/api/sendMessage?api_key=API_KEY" \
+     -H "Content-Type: application/json" \
+     -d '{"data":{"number":"628123456789","message":"Hello World!"}}'
+```
+>>>>>>> f403a3a (Initial commit)

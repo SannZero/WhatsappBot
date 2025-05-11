@@ -5,11 +5,11 @@ const config = require('./config.json');
 const client = new Client({
     authStrategy: new LocalAuth(),
     puppeteer: {
-      headless: false,
-      args: [
-        '--no-sandbox',
-        '--disable-setuid-sandbox'
-      ]
+        headless: false,
+        //   args: [
+        //     '--no-sandbox',
+        //     '--disable-setuid-sandbox'
+        //   ]      // OS Linux
     }
 });
 
@@ -21,7 +21,7 @@ global.__basedir = __dirname;
 const express = require('express');
 const app = express();
 
-const IP = config.server.ip;
+const HOST = config.server.host;
 const PORT = config.server.port;
 
 const apiKeys =  config.apiKeys;
@@ -131,8 +131,8 @@ client.on('ready', async () => {
         }
     });
 
-    app.listen(PORT, IP, () => {
-        console.log(`Server running on http://${IP}:${PORT}`);
+    app.listen(PORT, HOST, () => {
+        console.log(`Server running on http://${HOST}:${PORT}`);
     });
 });
 
