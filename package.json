@@ -32,7 +32,7 @@
     "@pedroslopez/moduleraid": "^5.0.2",
     "express": "^5.1.0",
     "fluent-ffmpeg": "2.1.2",
-    "mime": "^3.0.0",
+    "mime": "^4.0.7",
     "node-fetch": "^2.6.9",
     "node-webpmux": "3.1.7",
     "puppeteer": "^18.2.1"
