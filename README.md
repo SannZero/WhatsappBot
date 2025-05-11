@@ -28,7 +28,7 @@ node server
 ### Example Request API:
 URL: ``http://localhost:3000/api/xx?api_key=API_KEY``
 
-## Curl:
+### Curl:
 ```powershell
 curl -X POST "http://localhost:3000/api/sendMessage?api_key=API_KEY" \
      -H "Content-Type: application/json" \
