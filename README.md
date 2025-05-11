@@ -27,3 +27,6 @@ curl -X POST "http://localhost:3000/api/sendMessage?api_key=API_KEY" \
      -H "Content-Type: application/json" \
      -d '{"data":{"number":"628123456789","message":"Hello World!"}}'
 ```
+
+
+### Configuration: config.json
